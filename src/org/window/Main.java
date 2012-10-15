@@ -19,7 +19,7 @@ public class Main {
 	/**Zmienna countEdge zawiera ilosc wierzecholkow */
 	private static int countEdge = 0;
     public static void main(String[] args) {
-    
+     
      window = new Window();
      window.test();
     }
