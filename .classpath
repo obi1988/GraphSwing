@@ -34,5 +34,15 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/home/obi1988/Downloads/hibernate-release-4.1.7.Final/lib/required/hibernate-core-4.1.7.Final.jar"/>
+	<classpathentry kind="lib" path="/home/obi1988/Downloads/apache-log4j-1.2.17/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="/home/obi1988/eclipse/plugins/org.eclipse.m2e.archetype.common_1.1.0.20120529-1956/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/home/obi1988/Downloads/hibernate-release-4.1.7.Final/lib/required/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="/home/obi1988/Downloads/hibernate-release-4.1.7.Final/lib/required/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/home/obi1988/Downloads/hibernate-release-4.1.7.Final/lib/required/hibernate-commons-annotations-4.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="/home/obi1988/Downloads/hibernate-release-4.1.7.Final/lib/required/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="/home/obi1988/Downloads/hibernate-release-4.1.7.Final/lib/required/javassist-3.15.0-GA.jar"/>
+	<classpathentry kind="lib" path="/home/obi1988/Downloads/hibernate-release-4.1.7.Final/lib/required/jboss-logging-3.1.0.GA.jar"/>
+	<classpathentry kind="lib" path="/home/obi1988/Downloads/hibernate-release-4.1.7.Final/lib/required/jboss-transaction-api_1.1_spec-1.0.0.Final.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

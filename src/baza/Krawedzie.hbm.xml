@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 29, 2012 5:12:58 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="baza.Krawedzie" table="KRAWEDZIE">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="id_pracownicy_in" type="java.lang.Integer">
+            <column name="ID_PRACOWNICY_IN" />
+        </property>
+        <property name="id_pracownicy_out" type="java.lang.Integer">
+            <column name="ID_PRACOWNICY_OUT" />
+        </property>
+    </class>
+</hibernate-mapping>

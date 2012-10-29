@@ -75,7 +75,7 @@ public class Window implements ActionListener {
                text = new String(buffer, 0, n);
                Main.wypisz();
                in.close();
-               Layout<Integer, String> layout = new CircleLayout(Main.drawingGrapg(ConnectDB.odczyt()));
+               Layout<Integer, String> layout = new CircleLayout(Main.drawingGraph());
                layout.setSize(new Dimension(800,500));
                VisualizationViewer<Integer,String> vv = new VisualizationViewer<Integer,String>(layout);
                vv.setPreferredSize(new Dimension(800,500));
