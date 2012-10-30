@@ -4,14 +4,16 @@ Poniżej opis formatu pliku tekstowego służącego do przechowywania reprezenta
 W pierwszej linii znajduje się liczba całkowita N oznaczająca liczbę wierzchołków grafu. W następnych N liniach znajdują się etykiety poszczególnych wierzchołków.
 W kolejnych liniach znajdują się opisy krawędzi grafu. Każda linia zawiera dwie liczby x, y całkowite oddzielone znakiem tabulacji. Pierwsza liczba oznacza indeks
 wierzchołka źródłowego, druga liczba indeks wierzchołka docelowego (czyli krawędź skierowaną z wierzchołka x do y). Indeks wierzchołka odpowiada pozycji na liście nazw
-wierzchołków (numerowanych od 0).W załączeniu przykładowy pliku opisujący relacje w zespole. Wierzchołkami grafu są pracownicy, krawędzie reprezentują relację sympatii. W zespole pracuje 7 osób, kolega
+wierzchołków (numerowanych od 0). Wierzchołkami grafu są pracownicy, krawędzie reprezentują relację sympatii. W zespole pracuje 7 osób, kolega
  Marian lubi Roberta i Witolda, Robert lubi tylko Włodzimierza itp.
  
 1. Program zawiera opcję menu Plik – Otwórz… po wybraniu której pojawi się standardowe okno dialogowe do wyboru pliku z opisem grafu.
 2. Po wybraniu pliku, odczyta jego zawartość, sparsuje i zapisze jego reprezentację w bazie danych.
 3. Odczyta zawartość bazy danych związanych z wybranym wcześniej plikiem oraz wyrysuje w oknie graficzną reprezentację grafu.
 
-Baza:
+Technologie to Swing , Jung (biblioteka wykorzystana do rysowania grafu) oraz Hibernate
+
+Baza (PostgreSQL):
 nazwa test
 create table pracownicy (id int primary key, nazwa varchar (32))
 create table krawedzie (id int primary key, id_pracownicy_in int references pracownicy(id), id_pracownicy_out int references pracownicy(id))
