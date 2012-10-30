@@ -16,7 +16,6 @@ import edu.uci.ics.jung.visualization.control.DefaultModalGraphMouse;
 import edu.uci.ics.jung.visualization.control.ModalGraphMouse;
 import edu.uci.ics.jung.visualization.decorators.ToStringLabeller;
 
-import org.window.ConnectDB;
 public class Window implements ActionListener {
    JFrame myFrame = null;
    JPanel myPane = null;
@@ -25,9 +24,7 @@ public class Window implements ActionListener {
    String dirName = "\\workspace_asseco\\";
    String fileName = "plik.txt";
    public String text = "";
-   public static void main(String[] a) {
-      (new Window()).test();
-   }
+
    public void test() {
       myFrame = new JFrame("JEditorPane JFileChooser Test");
       myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

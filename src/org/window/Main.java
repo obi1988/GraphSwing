@@ -7,14 +7,11 @@ import java.util.StringTokenizer;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.window.Window;
 
 import edu.uci.ics.jung.graph.DirectedSparseGraph;
 import edu.uci.ics.jung.graph.Graph;
-
-import org.window.ConnectDB;
 
 import baza.Krawedzie;
 import baza.Pracownicy;
@@ -27,8 +24,7 @@ public class Main {
 	static Window window = null;
 	/** Zmienna countEdge zawiera ilosc wierzecholkow */
 	private static int countEdge = 0;
-	SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
-	static SessionFactory s = new Configuration().configure().buildSessionFactory();
+	private static SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
 
 	public static void main(String[] args) {
 		window = new Window();
@@ -44,7 +40,7 @@ public class Main {
 			list.add(st.nextToken());
 		}
 
-		Session session = s.openSession();
+		Session session = sessionFactory.openSession();
 		try {
 		for (int i = 0; i < countEdge; i++) {
 				Pracownicy pracownicy = new Pracownicy();
@@ -90,7 +86,7 @@ public class Main {
 	public static Graph<String, String> drawingGraph() {
 		int i = 0;
 		DirectedSparseGraph<String, String> g = new DirectedSparseGraph<String, String>();
-		Session session = s.openSession();
+		Session session = sessionFactory.openSession();
 		List<Pracownicy> pracownicy = session.createCriteria(Pracownicy.class).list();
 		List<Krawedzie> krawedzie = session.createCriteria(Krawedzie.class).list();
 		HashMap<Integer, String> hashMap = new HashMap<Integer, String>();
